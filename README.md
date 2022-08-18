@@ -14,6 +14,7 @@
 
 - Easy SignIn with Google
 - Add and remove food items to the cart
+- Search food items
 - Filter food items on the basis of
     <br>
      `-Price`<br>
