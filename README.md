@@ -9,15 +9,17 @@
 - `React Icons`
 - `Redux`
 
+
 ## Features:
 
 - Easy SignIn with Google
 - Add and remove food items to the cart
 - Filter food items on the basis of
-    -Price
-    -Ratings
-    -Out of stock
-    -Fast delivery
+    <br>
+     `-Price`<br>
+    `-Ratings`<br>
+    `-Out of stock`<br>
+    `-Fast delivery`<br>
 - Clear filter Option
 - Login Authentication
 - Order Summary 
