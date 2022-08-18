@@ -1,24 +1,42 @@
-import logo from './logo.svg';
 import './App.css';
+import Header from './components/Header';
+import {BrowserRouter,Route, Routes} from 'react-router-dom';
+import Cart from './components/Cart';
+import Home from './components/Home';
+import Login from './components/Login';
+import Placed from './components/Placed';
+import Summary from './components/Summary';
+import Signup from './components/Signup';
+import ProtectedRoute from "./components/ProtectedRoute";
+import {UserAuthContextProvider} from './context/UserAuthContext';
+import HeaderTwo from './components/HeaderTwo';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <BrowserRouter>
+      <Header />
+      <div>
+      <UserAuthContextProvider>
+      <Routes>
+      <Route path='/' element={<Home />} />
+      <Route path='/headerTwo' element={<HeaderTwo/>} />
+      <Route path='/cart' element={ <Cart />}  />
+      <Route path='/placed' element={
+      <ProtectedRoute>
+        <Placed />
+      </ProtectedRoute>} />
+      <Route path='/summary' element={
+      <ProtectedRoute>
+        <Summary />
+      </ProtectedRoute>} />
+      <Route path='/signup' element={<Signup />} />
+      <Route path='/login' element={ <Login />}  />
+      </Routes>
+      </UserAuthContextProvider>
+      </div>
+      </BrowserRouter>
+    </>
   );
 }
 

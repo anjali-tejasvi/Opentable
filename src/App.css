@@ -1,38 +1,369 @@
-.App {
-  text-align: center;
+a{
+    text-decoration: none !important;
+    color: inherit !important;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.home{
+    display: flex;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.navbar{
+    background-color: #353533;
+    color: #fff;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 2px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.logo{
+    color: #fff;
+    height: 50px;
+    width: 50px;
+    border: 2px solid white;
+}
+.productContainer {
+    background-color: #f1f3d7;
+    display:  flex;
+    width: 78%;
+    margin: 10px;
+    padding: 20px;
+    margin-left: 20px;
+    border-radius: 20px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    position: relative;
+    left: 20%;
+   
+
 }
 
-.App-link {
-  color: #61dafb;
+.imagebox {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background-color: rgb(237, 247, 60);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+
+
+.filters{
+    background-color:#353533;
+    color: #fff;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    margin: 10px;
+    height: 86vh;
+    position: fixed;
+    z-index: 101;
+    
+}
+
+.filters > span{
+    padding-bottom: 20px;
+}
+
+.title{
+    font-size: 30px;
+
+}
+
+.SumCart{
+    font-size: 30px;
+}
+
+.summary{
+    border: 5px solid #fff;
+    background-color: #343a40;
+    color: #fff;
+    border-radius: 15px;
+    height: 450px;
+}
+
+.SumCart{
+    padding-top: 30px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    border: 5px double white;
+}
+
+.CartTotal{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding-top: 20px;
+}
+.checkOutBtn{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-left: 90px;
+}
+
+.productContainerCart{
+    background-color: rgb(253, 253, 215);
+    display:  flex;
+    width: 78%;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 20px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    position: relative;
+    margin-right: 8px;
+    
+}
+
+.RatingStar{
+    font-size: 15px;
+    padding-right: 3px;
+} 
+
+.products{
+    width: 30%;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.cartitem{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 20px;
+    margin-bottom: 20px;
+    box-shadow:  0px 0px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 3px;
+}
+
+.cartItemImg {
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+
+}
+
+.cartItemDetail{
+    display: flex;
+    flex: 1;
+    padding: 0  20px;
+    flex-direction: column;
+}
+
+.summary{
+    width: 30%;
+}
+
+.wrap {
+    width: 1260px;
+    height: 467px;
+    display: flex;
+    border-radius: 8px;
+    margin: 10px;
+    justify-content: center;
+    align-items: center;
+    background: #f1f4ce;
+   
+    
+    
+}
+.login-form{
+    width: 350px;
+    margin: 0 auto;
+    border: 1px solid #ddd;
+    padding: 2rem;
+    background: #fff;
+    margin-top: 8px;
+    margin-bottom: 5px;
+    height: 95%;
+}
+.form-input{
+    background: #fafafa;
+    border: 1px solid #eeeeee;
+    padding: 12px;
+    width: 100%;
+}
+.form-group{
+    margin-bottom: 1rem;
+}
+.form-button{
+    background: #0e32e7;
+    border: 1px solid #ddd;
+    color: #ffffff;
+    padding: 10px;
+    width: 100%;
+    text-transform: uppercase;
+}
+.form-button:hover{
+    background: #08a1f4;
+}
+.form-header{
+   
+    padding-top: 3px;
+    text-align: center;
+    margin-bottom : 1rem;
+}
+.form-footer{
+    text-align: center;
+}
+
+/*Summary css */
+.SummmaryHeading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #ddf408;
+    border-radius: 5px;
+    background-color: #eeec90;
+    font-size: 32px;
+}
+
+.Ordersummary{
+    background-color: #ddd;
+    width: 30%;
+    border-radius: 5px;
+    margin-top: 8px;
+    margin-right: 8px;
+    height: 250px;
+}
+
+.PlaceOrderOne{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 50px;
+    
+}
+
+
+.PlaceOrderTwo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 200px;
+    margin-top: -70px;
+}
+
+.cod{
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.placed{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.tfo{
+    margin-top: 100px;
+    color: green;
+    font-size: 50px;
+}
+.Successful{
+    margin-top: 90px;
+    margin-left: 3px;
+    height: 90px;
+    width: 90px;
+}
+
+.GoogleImg{
+    height: 30px;
+    width: 30px;
+    margin-right: 30px;
+    transform: scaleY(1.5);
+    transform: scaleX(1.5);
+}
+
+
+
+@media (max-width: 771px){
+    .filters{
+        width: 40%;
+        padding: 10px;
+        margin: 5px;
+        
+    }
+
+    .filters > span{
+        font-size: 10px;
+
+    }
+
+    .title{
+        font-size:  18px !important;
+
+    }
+
+    .productContainer{
+        width: 60%;
+        padding: 0;
+        left: 40%;
+        position: relative;
+        overflow-x: hidden;
+        height: 500px;
+        
+    }
+    .products{
+        height: 300px;
+        width: 300px;
+        margin-bottom: 80px;
+        
+    }
+
+    .search{
+        display: none !important;
+    }
+
+    .wrap{
+        width: 95%;
+    }
+
+    .PlaceOrderOne{
+        margin-top: -30px;
+    }
+    .PlaceOrderTwo{
+        margin-top: 30px;
+        margin-left: 45px;
+        
+    }
+
+    .Ordersummary{
+        height: 400px;
+    }
+    .cod{
+        margin-left: 30px;
+        font-size: 18px;
+        margin-top: 80px;
+    }
+    .checkOutBtn{
+        margin-left: 5px;
+        padding: 5px;
+        margin-right: 5px;  
+    }
+    .SumCart{
+        font-size: 20px;
+    }
+    
+    
+    .productContainerCart{
+        
+        width: 500px;
+    }
+    .PlaceOrderOne{
+        margin-left: 20px;
+        margin: 10px;
+    }
+    .PlaceOrderTwo{
+        margin-left: 20px;
+        margin: 10px;
+    }
 }
