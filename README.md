@@ -30,7 +30,7 @@
 
 ### Clone this repository
 
-`git clone https://github.com/anjali-tejasvi/Opentable.git <br/>
+`git clone https://github.com/anjali-tejasvi/Opentable.git`<br>
 `cd my-app`
 
 ### Install Dependencies
