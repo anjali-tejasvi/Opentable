@@ -26,6 +26,11 @@
 - Order Summary 
     -place order
     -cancle order
+    
+## Final Look 
+<img width="951" alt="Screenshot 2022-12-04 160407" src="https://user-images.githubusercontent.com/74148733/205486057-7801dd30-6af5-4e0e-a949-48149b2efd6f.png">
+
+
 ## Installation and Usage
 
 ### Clone this repository
